@@ -8,9 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSource*/ {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
     @IBOutlet weak var table1: UITableView!
     @IBOutlet weak var table2: UITableView!
+    
+    
     
     let tableData = ["A" : ["Apple","ASD"],
                      "B" : ["Banan","Ball"],
@@ -21,11 +25,12 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
     //let teams: [String] = ["Bangladesh", "India", "Pakistan"]
     //let bangladeshPlayers: [String] = ["]
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    
 }
 
